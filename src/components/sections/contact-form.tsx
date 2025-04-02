@@ -60,8 +60,11 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-            <div className="space-y-2">
+        <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="grid gap-6 w-full max-w-md mx-auto px-4 md:px-6"
+        >
+            <div className="space-y-3">
                 <label htmlFor="name" className="text-sm font-medium">
                     Name
                 </label>
@@ -114,7 +117,11 @@ export default function ContactForm() {
                 )}
             </div>
 
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
+            <Button
+                type="submit"
+                className="w-full md:w-48 justify-self-center mt-4"
+                disabled={isSubmitting}
+            >
                 {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
         </form>

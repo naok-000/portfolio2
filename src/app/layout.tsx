@@ -39,7 +39,10 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <Navbar />
-                    <main className="flex-1">{children}</main>
+                    {/* UI-CENTER: メインコンテンツの幅制御を追加 */}
+                    <main className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-6">
+                        {children}
+                    </main>
                     <Footer />
                 </ThemeProvider>
             </body>

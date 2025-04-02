@@ -45,8 +45,9 @@ export function SkillsSection() {
     // const otherSkills = skills.filter((skill) => skill.category === "Other");
 
     return (
-        <section className="py-20 bg-muted/50">
-            <div className="container">
+        // UI-CENTER: セクションの余白と中央揃えを調整
+        <section className="py-20 bg-muted/50 px-4">
+            <div className="container mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +64,7 @@ export function SkillsSection() {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center">
                     <div className="space-y-8">
                         <h3 className="text-2xl font-semibold">Frontend</h3>
                         <motion.div

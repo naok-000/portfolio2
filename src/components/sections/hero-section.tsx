@@ -7,9 +7,10 @@ import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
     return (
-        <section className="py-20 md:py-28">
-            <div className="container">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        // UI-CENTER: セクションの余白と中央揃えを調整
+        <section className="py-20 md:py-28 px-4">
+            <div className="container mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}

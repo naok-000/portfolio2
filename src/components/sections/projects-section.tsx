@@ -52,8 +52,9 @@ const item = {
 
 export function ProjectsSection() {
     return (
-        <section className="py-20">
-            <div className="container">
+        // UI-CENTER: セクションの余白と中央揃えを調整
+        <section className="py-20 px-4">
+            <div className="container mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +75,7 @@ export function ProjectsSection() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center"
                 >
                     {projects.map((project) => (
                         <ProjectCard key={project.id} project={project} />
